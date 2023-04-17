@@ -4,7 +4,7 @@ import styles from './Header.module.scss'
 import {FiArrowLeft} from 'react-icons/fi'
 import Hamburger from '../hamburger/Hamburger'
 
-const Header = () => {
+const Header = ({backLink}) => {
 
   const {isAuth} = useAuth()
 

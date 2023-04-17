@@ -10,7 +10,7 @@
     outline: none;
     cursor: pointer;
     color: white;
-    font-size: 18px;
+    font-size: 30px;
   }
 
   .menu {
@@ -29,8 +29,13 @@
     &.show {
       display: block;
     }
+    
     > ul {
       list-style: none;
+
+      li {
+        color: #000;
+      }
 
       a {
         color: #000;

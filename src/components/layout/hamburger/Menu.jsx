@@ -12,13 +12,15 @@ const Menu = ({isShow}) => {
     <nav className={cn(styles.menu, {[styles.show]: isShow})}>
       <ul>
         {menu.map((item, idx) => {
-          <li key={`_menu_${idx}`}>
-            <li>{item.title}</li>
-            {/* <Link to={item.link}>{item.title}</Link> */}
-          </li>
+          return (
+            <li key={`_menu_${idx}`}>
+              <p>{item.title}</p>
+              {/* <Link to={item.link}>{item.title}</Link> */}
+            </li>
+          )
         })}
         <li>
-          <button onClick={logoutHandler}>Logout</button>
+          <button style={{color: 'black'}} onClick={logoutHandler}>Logout</button>
         </li>
       </ul>
     </nav>
